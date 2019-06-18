@@ -12,4 +12,7 @@ describe("addFn", () => {
   test("1 add 1 should equal 4", () => {
     expect(addFn(1, 1)).toBe(3);
   });
+  test("1 add 1 should equal 5", () => {
+    expect(addFn(1, 1)).toBe(5);
+  });
 });
