@@ -3,7 +3,8 @@ const app = express();
 
 
 app.get("/",(req,res)=>{
-    res.send("hello express");
+    const TESTVal = process.env.TEST;
+    res.send(`hello express test:${TESTVal}`);
 })
 
 
