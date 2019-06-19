@@ -6,22 +6,3 @@ describe("addFn", () => {
   });
 });
 
-
-describe("test env", ()=>{
-    test("env val = 123456",()=>{
-        const testEnv = process.env.TEST;
-        console.log(testEnv)
-        expect(testEnv).toBe('123456');
-    })
-
-    test("env val != nihao",()=>{
-        const testEnv = process.env.TEST;
-        console.log(testEnv)
-        expect(testEnv).not.toBe('nihao');
-    })
-    test("env val = heiheihei",()=>{
-        const testEnv = process.env.TEST;
-        console.log(testEnv)
-        expect(testEnv).toBe('heiheihei');
-    })
-})
