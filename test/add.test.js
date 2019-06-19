@@ -13,4 +13,15 @@ describe("test env", ()=>{
         console.log(testEnv)
         expect(testEnv).toBe('123456');
     })
+
+    test("env val != nihao",()=>{
+        const testEnv = process.env.TEST;
+        console.log(testEnv)
+        expect(testEnv).not.toBe('nihao');
+    })
+    test("env val = heiheihei",()=>{
+        const testEnv = process.env.TEST;
+        console.log(testEnv)
+        expect(testEnv).toBe('heiheihei');
+    })
 })
