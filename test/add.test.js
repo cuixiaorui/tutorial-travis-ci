@@ -5,3 +5,12 @@ describe("addFn", () => {
     expect(addFn(1, 1)).toBe(2);
   });
 });
+
+
+describe("test env", ()=>{
+    test("env val = 123456",()=>{
+        const testEnv = process.env.TEST;
+        console.log(testEnv)
+        expect(testEnv).toBe('123456');
+    })
+})
